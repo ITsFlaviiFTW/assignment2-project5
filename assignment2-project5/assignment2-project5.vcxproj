@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Source.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_DEBUG;_CONSOLE;%(PreprocessorDefinitions); PRE_RELEASE</PreprocessorDefinitions>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="D:\College Classes\Third Year (2023-2024)\First Semester (Fall)\Project V\assignment 2\StudentData.txt" />
-    <Text Include="D:\College Classes\Third Year (2023-2024)\First Semester (Fall)\Project V\assignment 2\StudentData_Emails1.txt" />
+    <Text Include="D:\College Classes\Third Year %282023-2024%29\First Semester %28Fall%29\Project V\assignment 2\StudentData_Emails.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
