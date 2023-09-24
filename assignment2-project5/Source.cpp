@@ -12,6 +12,7 @@ struct STUDENT_DATA {
 };
 
 int main() {
+    
     std::vector<STUDENT_DATA> students; // Ensure this is at the top of main.
 
 #ifdef PRE_RELEASE
