@@ -38,6 +38,5 @@ int main() {
     for (const auto& student : students) {
         std::cout << student.firstName << " " << student.lastName << std::endl;
     }
-
     return 1;
 }
