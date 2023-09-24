@@ -9,6 +9,12 @@ struct STUDENT_DATA {
 };
 
 int main() {
+
+#ifdef PRE_RELEASE
+    std::cout << "Running pre-release version." << std::endl;
+#else
+    std::cout << "Running standard version." << std::endl;
+#endif
     std::vector<STUDENT_DATA> students;
     std::ifstream file("StudentData.txt");
 
